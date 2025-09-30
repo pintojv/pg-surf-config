@@ -1,0 +1,17 @@
+team: D&A and Flexflow Operations Team
+contact: pinto.b@pg.com, dragun.w@pg.com, DAOperations@shared.pg.com
+agentPool: da-vm-l-nonprod
+notifyBeforeDays: 14
+resource:
+  - keyvault:
+      - adoServiceConnection: "Secrets rotation for kvingestiondev101"
+        keyVault: "kvingestiondev101"
+        secretNames:
+          -
+          -
+  - keyvault:
+      - adoServiceConnection: "Secrets rotation for kvingestiontest101"
+        keyVault: "kvingestiontest101"
+        secretNames:
+          -
+          -
