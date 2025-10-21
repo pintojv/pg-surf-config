@@ -1,0 +1,77 @@
+team: D&A Flexflow Operations Team
+contact: pinto.b@pg.com, dragun.w@pg.com, DAOperations@shared.pg.com, cdlplatformops.im@pg.com
+agentPool: EX-VM-W-Prod
+notifyBeforeDays: 14
+resource:
+  - keyvault:
+      - adoServiceConnection: "Secrets rotation for Ingestion 1.0"
+        keyVault: "ingestkvstorage"
+        secretNames:
+        - API-Metadata-PROD-Client-Secret
+        - API-Metadata-UAT-Client-Secret
+        - CAS-BLOB-TOKEN-PROD
+        - CAS-DATAMART-BLOB-TOKEN
+        - CAS-DATAMART-SOURCE-PASS-NONPROD
+        - CAS-DATAMART-SOURCE-PASS-PROD
+        - CAS-SOURCE-PASS-PROD
+        - CAS-SOURCE-PASS-UAT
+        - CAST-DATAMART-BLOB-TOKEN
+        - CDL-Ingest-IOPS-Grafana-PASS
+        - DATABRICKS-PROD-Token
+        - DATABRICKS-UAT-Token
+        - DATACATALOG-BLOB-TOKEN-PROD
+        - DATACATALOG-BLOB-TOKEN-UAT
+        - ddapicdlops-sas-token
+        - DMO-AWS-SurveyData-APIManagement-Password
+        - DMO-AZ-SP-SurveyData-Ingestion-Client-Secret
+        - DMO-IPP-Principal-Secret
+        - DMO-IPP-SP-SECRET
+        - DMO-NielsenSV-Principal-Secret
+        - DMO-NielsenSV-SQL-Pwd
+        - DPR-IDFCN-UAT-PASS
+        - DPR-IDFCP-PROD-PASS
+        - ERETAIL-SEARCH-BLOB-TOKEN-PROD
+        - ERETAIL-SEARCH-SOURCE-PASS-PROD
+        - ERETAIL-SEARCH-SOURCE-PASS-UAT
+        - FIT-DBR-PROD-Token
+        - FIT-DBR-UAT-Token
+        - FIT-PASS
+        - flexflow-platform-cdlflexflowcicd-jfrog-token
+        - HHP-BLOB-ACCESS-KEY
+        - HHP-BLOB-SAS-PROD
+        - HHP-BLOB2-SAS-PROD
+        - hhp-client-secret-test
+        - PLANORAMA-PASS-DE
+        - PLANORAMA-PASS-ES
+        - PLANORAMA-PASS-ESP
+        - PLANORAMA-PASS-FR
+        - PLANORAMA-PASS-IT
+        - PLANORAMA-PASS-PT
+        - PLANORAMA-PASS-UK
+        - PROMO-BLOB-TOKEN-PROD
+        - PROMO-PRICEPROMO-SOURCE-PASS-PROD
+        - PROMO-PRICEPROMO-SOURCE-PASS-UAT
+        - PROMO-SOURCE-PASS-NONPROD
+        - PROMO-SOURCE-PASS-PROD
+        - RDS-BLOB-TOKEN-PROD
+        - RDS-dnmasterdatahd73ls4-BLOB-SAS-KEY
+        - RDS-KEY
+        - RDS-MASTERDATA-UAT-TOKEN
+        - RDSV2P-PASS
+        - RDSV2T-PASS
+        - RETAIL-EXECUTION-BLOB-SAS-UAT
+        - RETAIL-EXECUTION-BLOB-TOKEN-PROD
+        - RETAIL-EXECUTION-BLOB-TOKEN-UAT
+        - SALESFORCE-JP-ADLS-SAS-PROD
+        - SALESFORCE-JP-API-PASS-PROD
+        - SALESFORCE-JP-API-PASS-UAT
+        - TRAX-API-TOKEN-PROD
+        - TRAX-API-TOKEN-PROD-US
+        - TRAX-API-TOKEN-UAT-JP
+
+  # - keyvault:
+  #     - adoServiceConnection: "Secrets rotation for kvingestionprod101"
+  #       keyVault: "kvingestionprod101"
+  #       secretNames:
+  #         -
+  #         -
